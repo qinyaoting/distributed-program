@@ -1,0 +1,37 @@
+# [DB]方式设置
+# [DB JPA]设置
+spring.jpa.show-sql: false
+spring.jpa.properties:
+      ddl-auto: create
+      hibernate.dialect: org.hibernate.dialect.Oracle10gDialect
+# [DB Mybatis]
+# [DB Connector]
+spring.datasource:
+    name: wuzhong
+    username: ts
+    password: ts
+# [oracle]
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@192.168.20.201:1521:orcl
+# [postgresql]
+#    driver-class-name: org.postgresql.Driver
+#    url: jdbc:postgresql://localhost:5432/test
+spring:
+  resources:
+    cache-period: 7200
+    
+# [Quartz Framework]设置
+schedule :
+    type: "cron"
+    startDelay: 0
+    repeatInterval: 300
+    concurrent: false
+    cronString : "0 0/1 * * * ?"
+    taskName: "dcGetLogTask"
+  
+# [log4j]设置
+# jjf 20160901
+debug: false
+logging:
+  pattern:
+    config: log4j.properties  
