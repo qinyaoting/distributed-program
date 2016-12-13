@@ -11,7 +11,7 @@ import java.util.function.Predicate;
 /**
  * Created by chin on 12/8/16.
  */
-public class Test {
+public class SortListItemByItemField {
 
 
     /**
