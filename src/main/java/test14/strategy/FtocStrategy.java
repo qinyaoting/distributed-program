@@ -7,11 +7,11 @@ import java.io.InputStreamReader;
 /**
  * Created by chin on 12/13/16.
  */
-public class FtocStrategy implements Application {
+public class FtocStrategy implements Application {  //1 实现接口
 
     public static void main(String[] args) {
         (new ApplicationRunner(new FtocStrategy())).run();
-    }
+    }   //2 把自己传给Runner
 
 
     private InputStreamReader isr;

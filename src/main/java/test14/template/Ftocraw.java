@@ -11,6 +11,18 @@ public class Ftocraw {
 
     public static void main(String[] args) throws IOException {
 
+        /**
+         * 读取文件内容,把温度从华氏转为摄氏
+         *
+         * 大致分三部分,
+         *
+         * 一,初始化参数
+         *
+         * 二,循环获取内容
+         *
+         * 三,回收资源
+         *
+         */
         InputStreamReader isr = new InputStreamReader(System.in);
         BufferedReader br = new BufferedReader(isr);
         boolean done = false;

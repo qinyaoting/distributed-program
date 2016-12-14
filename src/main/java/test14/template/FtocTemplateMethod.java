@@ -9,6 +9,10 @@ import java.io.InputStreamReader;
  */
 public class FtocTemplateMethod extends Application {
 
+    /**
+     * 错误的使用方法,
+     */
+
     private InputStreamReader isr;
     private BufferedReader br;
 
