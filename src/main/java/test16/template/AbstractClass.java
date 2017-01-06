@@ -10,7 +10,8 @@ public abstract class AbstractClass {
     public abstract void primitiveOperation1();
     public abstract void primitiveOperation2();
 
-    // 已经把子类要调用的方法的顺序排好了
+    // 已经把子类要调用的方法的顺序排好了,对外暴露的是templateMethod方法,
+    // 可能是实现流程太复杂,分成几个小的片段,
     public void templateMethod() {
         primitiveOperation1();;
 
