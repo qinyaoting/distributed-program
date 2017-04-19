@@ -1,5 +1,12 @@
 package test16.template;
 
+import java.io.IOException;
+import java.net.URL;
+import java.net.URLConnection;
+import java.util.Collection;
+import java.util.List;
+import java.util.Set;
+
 /**
  * Created by chin on 1/6/17.
  */
@@ -12,10 +19,14 @@ public abstract class AbstractClass {
 
     // 已经把子类要调用的方法的顺序排好了,对外暴露的是templateMethod方法,
     // 可能是实现流程太复杂,分成几个小的片段,
-    public void templateMethod() {
+    public void templateMethod() throws IOException {
         primitiveOperation1();;
 
         primitiveOperation2();
         System.out.println("templateMethod...");
+
+        URL url = new URL("http://www.yahoo.com");
+        URLConnection conn = url.openConnection();
+        conn.getInputStream();
     }
 }

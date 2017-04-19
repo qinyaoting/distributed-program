@@ -529,7 +529,7 @@ public class Column implements Serializable
         builder.append(getParsedDefaultValue());
         /*if (!TypeMap.isNumericType(_typeCode))
         {
-            builder.append(_size);
+            builder1.append(_size);
         }*/
         
         return builder.toHashCode();

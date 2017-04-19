@@ -33,7 +33,7 @@ public class CuratorUtils {
          */
         //CuratorFrameworkFactory.newClient(connectString, sessionTimeoutMs, connectionTimeoutMs, retryPolicy)
         // fluent风格aip
-        //    CuratorFrameworkFactory.builder().sessionTimeoutMs(5000).connectString(connectString).namespace("/test").build();
+        //    CuratorFrameworkFactory.builder1().sessionTimeoutMs(5000).connectString(connectString).namespace("/test").build();
         // 重连策略,没1一秒重试一次,最大重试次数3次
         RetryPolicy retryPolicy = new ExponentialBackoffRetry(1000, 3);
         zkclient = CuratorFrameworkFactory.builder().connectString(connectString).sessionTimeoutMs(5000).retryPolicy(retryPolicy).namespace("xcompany").build();
