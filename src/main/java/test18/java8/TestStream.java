@@ -1,7 +1,6 @@
 package test18.java8;
 
 import com.google.common.collect.Lists;
-import org.junit.Test;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -13,11 +12,6 @@ import java.util.stream.Collectors;
 
 public class TestStream {
 
-
-    @Test
-    public void test() {
-
-    }
 
     private List<Article> articles = Lists.newArrayList();
 

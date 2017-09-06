@@ -8,14 +8,18 @@ spring.jpa.properties:
 # [DB Connector]
 spring.datasource:
     name: wuzhong
-    username: ts
-    password: ts
+    username: root
+    password: 123456
 # [oracle]
-    driver-class-name: oracle.jdbc.OracleDriver
-    url: jdbc:oracle:thin:@192.168.20.201:1521:orcl
+#    driver-class-name: oracle.jdbc.OracleDriver
+#    url: jdbc:oracle:thin:@192.168.20.201:1521:orcl
 # [postgresql]
 #    driver-class-name: org.postgresql.Driver
 #    url: jdbc:postgresql://localhost:5432/test
+# [postgresql]
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://10.38.240.29:3306/bi_mar_clue
+
 spring:
   resources:
     cache-period: 7200

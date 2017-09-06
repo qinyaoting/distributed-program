@@ -1,4 +1,4 @@
-package test30;
+package test30.schedule;
 
 import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.scheduling.annotation.EnableScheduling;
