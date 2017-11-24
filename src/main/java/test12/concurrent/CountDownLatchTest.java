@@ -1,4 +1,4 @@
-package test12.cyclicbarrier;
+package test12.concurrent;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
