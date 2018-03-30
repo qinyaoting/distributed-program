@@ -1,4 +1,4 @@
-package test18.java8;
+package test18.stream;
 
 import com.google.common.collect.Lists;
 

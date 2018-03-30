@@ -1,4 +1,4 @@
-package test19.decimalformat;
+package test19.decimal;
 
 import java.math.BigDecimal;
 import java.text.DecimalFormat;
