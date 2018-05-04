@@ -11,10 +11,10 @@ public class Ftocraw {
 
     public static void main(String[] args) throws IOException {
 
-        /**
+        /*
          * 读取文件内容,把温度从华氏转为摄氏
          *
-         * 大致分三部分,
+         * 面向过程的设计  大致分三部分,
          *
          * 一,初始化参数
          *
