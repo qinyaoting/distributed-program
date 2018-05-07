@@ -181,6 +181,20 @@
             <version>2.8.7</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.github.sanjusoftware</groupId>
+            <artifactId>yamlbeans</artifactId>
+            <version>1.11</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.yaml/snakeyaml -->
+        <dependency>
+            <groupId>org.yaml</groupId>
+            <artifactId>snakeyaml</artifactId>
+            <version>1.4</version>
+        </dependency>
+
+
 
 
     </dependencies>
