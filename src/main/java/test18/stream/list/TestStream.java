@@ -1,4 +1,4 @@
-package test18.stream;
+package test18.stream.list;
 
 import com.google.common.collect.Lists;
 

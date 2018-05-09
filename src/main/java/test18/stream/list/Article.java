@@ -1,4 +1,4 @@
-package test18.stream;
+package test18.stream.list;
 
 import java.util.List;
 
@@ -7,9 +7,9 @@ import java.util.List;
  */
 public class Article {
 
-    public final String title;
-    public final String author;
-    public final List<String> tags;
+    public final String title;          //文章标题
+    public final String author;         //作者
+    public final List<String> tags;     //标签
 
     public Article(String title, String author, List<String> tags) {
         this.title = title;
