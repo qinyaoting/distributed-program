@@ -1,0 +1,7 @@
+!!test54.yml2bean.Student
+age: 24
+id: 1
+name: 路飞
+tels:
+- !!test54.yml2bean.Tel {name: 张三, tel: '10123041445'}
+- !!test54.yml2bean.Tel {name: 李四, tel: '19923041455'}

@@ -1,5 +1,7 @@
-package test18.stream.list;
+package test18.java8.list;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.common.collect.Lists;
 
 import java.util.*;
@@ -12,8 +14,23 @@ import java.util.stream.Collectors;
 
 public class TestStream {
 
+    @JsonProperty("articles")
+    private List<Article> articles;
 
-    private List<Article> articles = Lists.newArrayList();
+    @JsonCreator
+    public TestStream(List<Article> articles) {
+        this.articles = articles;
+    }
+
+
+    @JsonProperty(value = "articles")
+    public List<Article> getArticles() {
+        return articles;
+    }
+
+    public void setArticles(List<Article> articles) {
+        this.articles = articles;
+    }
 
     //在集合中查找包含“Java”标签的第一篇文章
     public Article getFirstJavaArticle1() {

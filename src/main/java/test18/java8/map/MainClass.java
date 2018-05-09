@@ -1,4 +1,4 @@
-package test18.stream.map;
+package test18.java8.map;
 
 import java.util.HashMap;
 import java.util.Map;
