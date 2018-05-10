@@ -57,7 +57,7 @@ public class Main {
         Map<String, Object> map = mapper.readValue(json, new TypeReference<Map<String,Object>>(){});
         System.out.println(map.size());
 
-        //5
+        //5 配置不能识别的字段是否失败
         String jsonString = "{ \"color\" : \"Black\", \"type\" : \"Fiat\", \"year\" : \"1970\" }";
         mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
         car = mapper.readValue(jsonString, Car.class);

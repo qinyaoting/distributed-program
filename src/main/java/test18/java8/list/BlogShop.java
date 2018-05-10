@@ -12,18 +12,17 @@ import java.util.stream.Collectors;
  */
 
 
-public class TestStream {
+public class BlogShop {
 
-    @JsonProperty("articles")
+    public BlogShop() {
+    }
+
     private List<Article> articles;
 
-    @JsonCreator
-    public TestStream(List<Article> articles) {
+    public BlogShop(List<Article> articles) {
         this.articles = articles;
     }
 
-
-    @JsonProperty(value = "articles")
     public List<Article> getArticles() {
         return articles;
     }
@@ -32,7 +31,7 @@ public class TestStream {
         this.articles = articles;
     }
 
-    //在集合中查找包含“Java”标签的第一篇文章
+    //在集合中查找包含“java”标签的第一篇文章
     public Article getFirstJavaArticle1() {
         for (Article article : articles) {
             if (article.getTags().contains("java"))
@@ -43,15 +42,15 @@ public class TestStream {
 
     public Optional<Article> getFirstJavaArticle() {
         return articles.stream()
-                .filter(article -> article.getTags().contains("Java"))
+                .filter(article -> article.getTags().contains("java"))
                 .findFirst();
     }
 
     //获取所有匹配的元素而不是仅获取第一个。
-    public List<Article> getAllJavaArticles1() {
+    public List<Article> getAlljavaArticles1() {
         List<Article> result = new ArrayList<>();
         for (Article article : articles) {
-            if (article.getTags().contains("Java")) {
+            if (article.getTags().contains("java")) {
                 result.add(article);
             }
         }
@@ -60,8 +59,8 @@ public class TestStream {
 
     public List<Article> getAllArticles() {
         return articles.stream()
-                .filter(article -> article.getTags().contains("Java"))
-                .collect(Collectors.toList());
+                .filter(article -> article.getTags().contains("java"))
+                .collect(java.util.stream.Collectors.toList());
     }
 
     //根据作者来把所有的文章分组。
