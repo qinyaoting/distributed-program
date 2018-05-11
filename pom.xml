@@ -94,7 +94,6 @@
             <version>1.8.4</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.apache.curator/curator-framework -->
         <dependency>
             <groupId>org.apache.curator</groupId>
             <artifactId>curator-framework</artifactId>
@@ -157,13 +156,6 @@
         </dependency>
 
         <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-            <scope>test</scope>
-            <version>1.4.194</version>
-        </dependency>
-
-        <dependency>
             <groupId>joda-time</groupId>
             <artifactId>joda-time</artifactId>
             <version>2.9.9</version>
@@ -187,14 +179,17 @@
             <version>1.11</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.yaml/snakeyaml -->
         <dependency>
             <groupId>org.yaml</groupId>
             <artifactId>snakeyaml</artifactId>
             <version>1.4</version>
         </dependency>
 
-
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-csv</artifactId>
+            <version>1.5</version>
+        </dependency>
 
 
     </dependencies>
