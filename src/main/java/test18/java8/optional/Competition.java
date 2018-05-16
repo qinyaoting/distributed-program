@@ -10,6 +10,7 @@ package test18.java8.optional;
  */
 public class Competition {
 
+    // 比赛结果
     private CompResult result;
 
     public CompResult getResult() {

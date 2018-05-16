@@ -10,6 +10,7 @@ package test18.java8.optional;
  */
 public class CompResult {
 
+    // 冠军
     private User user;
 
     public User getUser() {

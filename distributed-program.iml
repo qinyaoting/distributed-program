@@ -124,5 +124,8 @@
     <orderEntry type="library" name="Maven: com.github.sanjusoftware:yamlbeans:1.11" level="project" />
     <orderEntry type="library" name="Maven: org.yaml:snakeyaml:1.4" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-csv:1.5" level="project" />
+    <orderEntry type="library" name="Maven: org.jsoup:jsoup:1.11.2" level="project" />
+    <orderEntry type="library" name="Maven: net.sourceforge.htmlcleaner:htmlcleaner:2.21" level="project" />
+    <orderEntry type="library" name="Maven: org.jdom:jdom2:2.0.6" level="project" />
   </component>
 </module>
