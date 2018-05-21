@@ -2,12 +2,12 @@
   "name" : "SH wild park",
   "city" : "Shanghai",
   "animals" : [ {
-    "@class" : "test53.json2bean.Lion",
+    "type" : "test53.json2bean.Lion",
     "name" : "Samba",
     "type" : "carnivorous",
     "sex" : "F"
   }, {
-    "@class" : "test53.json2bean.Elephant",
+    "type" : "test53.json2bean.Elephant",
     "name" : "Manny",
     "type" : "herbivorous",
     "high" : "10"

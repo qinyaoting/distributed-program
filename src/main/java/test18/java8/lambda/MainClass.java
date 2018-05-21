@@ -8,6 +8,7 @@ import java.awt.event.ActionListener;
 import java.util.Arrays;
 import java.util.IntSummaryStatistics;
 import java.util.List;
+import java.util.Objects;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
@@ -68,6 +69,7 @@ public class MainClass {
         Predicate<String> startWithJ = (n) ->n.startsWith("J");
         Predicate<String> givenLength = (n) ->n.length()==4;
         languages.stream()
+                .filter(Objects::nonNull)       //过滤非空
                 .filter(startWithJ.and(givenLength))
                 .forEach(System.out::println);
 
