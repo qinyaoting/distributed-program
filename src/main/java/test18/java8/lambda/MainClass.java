@@ -24,6 +24,7 @@ public class MainClass {
 
     public static void main(String[] args) {
 
+        // sample1 线程Thread
         new Thread() {
             @Override
             public void run() {
