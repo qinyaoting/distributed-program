@@ -1,6 +1,5 @@
 package test54.yml2bean;
 
-import org.yaml.snakeyaml.Yaml;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -21,7 +20,7 @@ public class StuTest {
     // snakeyaml生成yaml不太好,
     // 生成的yaml还有{}
 
-    public static void main(String[] args) throws IOException {
+    /*public static void main(String[] args) throws IOException {
         Student stu=new Student();
         stu.setName("路飞");
         stu.setAge(24);
@@ -38,5 +37,5 @@ public class StuTest {
         stu.setTels(tels);
         Yaml yaml = new Yaml();
         yaml.dump(stu, new FileWriter("stu.yaml"));
-    }
+    }*/
 }
