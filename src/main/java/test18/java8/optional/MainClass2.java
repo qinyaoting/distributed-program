@@ -31,7 +31,7 @@ public class MainClass2 {
                 }
             }
         }
-        throw new IllegalArgumentException("the value of param comp isn't avalid");
+        throw new IllegalArgumentException("the value of param comp isn't valid");
     }
 
     // 漂亮的写法
