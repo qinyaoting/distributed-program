@@ -44,4 +44,10 @@ public class Demo {
     public void setItems(List<Demo> items) {
         this.items = items;
     }
+
+
+    public Demo(String name, String desc) {
+        this.name = name;
+        this.desc = desc;
+    }
 }

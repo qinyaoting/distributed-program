@@ -14,7 +14,7 @@ import com.fasterxml.jackson.annotation.JsonSubTypes.*;
  * To change this template use File | Settings | File Templates.
  * Description:
  */
-@JsonTypeInfo(use = Id.CLASS, include = As.PROPERTY,property = "@class")       //3.??
+@JsonTypeInfo(use = Id.NAME, include = As.PROPERTY,property = "type", visible = true)       //3.??
 @JsonSubTypes({@Type(value=Lion.class, name="lion"),
         @Type(value=Elephant.class,name="elephant")})       //2.标记了两个子类
 public abstract class Animal {

@@ -19,6 +19,7 @@ public class Lion extends Animal {
 
     @JsonCreator
     public Lion(@JsonProperty("name")String name) {
+        super.type = "lion";
         this.name = name;
     }
 
@@ -26,13 +27,13 @@ public class Lion extends Animal {
         return name;
     }
 
-    public String getType() {
+    /*public String getType() {
         return "carnivorous";
-    }
+    }*/
 
     @Override
     public String toString() {
         return "Lion [name=" + name + ", getName()=" + getName()
-                + ", getType()=" + getType() + "]";
+                /*+ ", getType()=" + getType() + "]"*/;
     }
 }

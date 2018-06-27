@@ -20,18 +20,19 @@ public class Elephant extends Animal {
     @JsonCreator
     public Elephant(@JsonProperty("name")String name) {
         this.name = name;
+        super.type = "elephant";
     }
     public String getName() {
         return name;
     }
 
-    public String getType() {
+    /*public String getType() {
         return "herbivorous";
-    }
+    }*/
 
     @Override
     public String toString() {
-        return "Elephant [getName()=" + getName() + ", getType()=" + getType()
-                + "]";
+        return "Elephant [getName()=" + getName() + ", getType()="/* + getType()
+                + "]"*/;
     }
 }

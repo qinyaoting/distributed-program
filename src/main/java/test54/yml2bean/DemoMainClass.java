@@ -5,6 +5,7 @@ import com.esotericsoftware.yamlbeans.YamlReader;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
 
 /**
  * Created with IntelliJ IDEA.
@@ -14,12 +15,12 @@ import java.io.FileReader;
  * To change this template use File | Settings | File Templates.
  * Description:
  */
-public class MainClass {
+public class DemoMainClass {
 
 
     // 如何从yaml文件中初始化为对象
 
-    public static void main(String[] args) throws YamlException, FileNotFoundException {
+    public static void main(String[] args) throws IOException {
         DemoService service = new DemoService();
         service.yml2Bean();
         System.out.println("end");
