@@ -5,6 +5,8 @@ package test7.annotation;
  */
 public class PasswordUtils {
 
+    @CustomFieldAnno(id="name666")
+    private String name;
 
     @UserCase(id="47", description = "Password must contain at least one numeric")
     public boolean validatePassword(String password) {

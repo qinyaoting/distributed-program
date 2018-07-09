@@ -32,11 +32,12 @@ public class DemoService {
         Demo d3 = new Demo("c3", "c3------");
         d1.setItems(Lists.newArrayList(d2,d3));
         w.write(d1);
+        w.close();
 
         // 空的TODO
-        /*YamlReader reader = new YamlReader(new FileReader(path));
+        YamlReader reader = new YamlReader(new FileReader(path));
         Demo demo = reader.read(Demo.class);
-        System.out.println(demo);*/
+        System.out.println(demo);
 
     }
 }

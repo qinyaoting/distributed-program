@@ -88,8 +88,8 @@ public class MainClass {
         // 使用reduce
         double total = costBeforeTax.stream()
                 .map(cost->cost+.12*cost)
-                .reduce((sum,cost)->sum+cost)
-                .get();
+                .reduce((sum,cost)->sum+cost)       //reduce求和 ,需要配合map中cost
+                .get();     //获取值
         System.out.println(total);
 
         //sample7

@@ -142,5 +142,6 @@
     <orderEntry type="library" scope="TEST" name="Maven: com.101tec:zkclient:0.9" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.scala-lang.modules:scala-parser-combinators_2.11:1.0.4" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.apache.kafka:kafka_2.11:test:0.10.1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.7" level="project" />
   </component>
 </module>
