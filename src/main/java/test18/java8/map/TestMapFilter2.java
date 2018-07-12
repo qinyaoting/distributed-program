@@ -25,7 +25,7 @@ public class TestMapFilter2 {
         //Map -> Stream -> Filter -> Map
         Map<Integer, String> collect = HOSTING.entrySet().stream()
                 .filter(map -> map.getKey() == 2)
-                .collect(Collectors.toMap(p -> p.getKey(), p -> p.getValue()));
+                .collect(Collectors.toMap(p -> p.getKey(), p -> p.getValue()));     //java8构造map返回
 
         System.out.println(collect); //output : {2=heroku.com}
 
