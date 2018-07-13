@@ -18,15 +18,15 @@ public class ArrayListMultimapTest {
 
         // Map<Author>, List<Book>> 类似的结构
         // 可以用MultiMap来保存, 要比上述结构简洁
-        ArrayListMultimap multimap = ArrayListMultimap.create();
-        multimap.put("jack","book-1");
-        multimap.put("jack","book-2");
-        multimap.put("jack","book-3");
+        ArrayListMultimap multiMap = ArrayListMultimap.create();
+        multiMap.put("jack","book-1");
+        multiMap.put("jack","book-2");
+        multiMap.put("jack","book-3");
 
-        System.out.println(multimap.toString());
-        Object obj = multimap.get("jack");
+        System.out.println(multiMap.toString());
+        Object obj = multiMap.get("jack");
 
-        /*multiMap.put("lucy", null);
+        multiMap.put("lucy", null);
         multiMap.put("lucy", "book-b");
         multiMap.put("lucy", "book-c");
         System.out.println(multiMap.toString());
@@ -41,10 +41,10 @@ public class ArrayListMultimapTest {
         System.out.println(multiMap.toString());
 
         // 删除不存在的key, 不会报错
-        multiMap.remove("ken");
+        multiMap.removeAll("ken");
         // 删除不存在的key下的item, 不会报错
         multiMap.remove("ken","book-c");
-        System.out.println(multiMap.toString());*/
+        System.out.println(multiMap.toString());
 
     }
 }
