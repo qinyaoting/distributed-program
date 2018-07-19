@@ -1,8 +1,10 @@
-package test18.map;
+package test14.guava.map;
 
 import com.google.common.collect.ArrayListMultimap;
 import org.apache.commons.collections.MultiHashMap;
 import org.apache.commons.collections.MultiMap;
+
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -12,13 +14,14 @@ import org.apache.commons.collections.MultiMap;
  * To change this template use File | Settings | File Templates.
  * Description:
  */
-public class ArrayListMultimapTest {
+public class MultiHashMapTest {
 
     public static void main(String[] args) {
 
         // Map<Author>, List<Book>> 类似的结构
         // 可以用MultiMap来保存, 要比上述结构简洁
-        ArrayListMultimap multiMap = ArrayListMultimap.create();
+
+        MultiMap multiMap = new MultiHashMap();
         multiMap.put("jack","book-1");
         multiMap.put("jack","book-2");
         multiMap.put("jack","book-3");
@@ -41,7 +44,7 @@ public class ArrayListMultimapTest {
         System.out.println(multiMap.toString());
 
         // 删除不存在的key, 不会报错
-        multiMap.removeAll("ken");
+        multiMap.remove("ken");
         // 删除不存在的key下的item, 不会报错
         multiMap.remove("ken","book-c");
         System.out.println(multiMap.toString());

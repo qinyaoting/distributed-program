@@ -8,7 +8,7 @@ package test78.generic;
  * To change this template use File | Settings | File Templates.
  * Description:
  */
-public class Box<T> {
+public class Box<T> {   //泛型类, 表示set进来的obj,和get出去的obj必须类型一样, 而且get的时候, 不用强转了
 
     private T obj;
 

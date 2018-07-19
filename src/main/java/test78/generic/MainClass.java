@@ -17,14 +17,15 @@ public class MainClass {
 
         Box<Apple> box2 = new Box<Apple>();
         box2.setObj(new Apple());
-        Apple ap2 = box2.getObj();  //不需要转换了
+        Apple ap2 = box2.getObj();  //不需要转换了, 直接拿到了Apple
 
 
         Apple ap3 = getInstanec(Apple.class);
 
     }
 
-    // <T> T 是返回类型? Class<T>?
+    // 泛型方法的使用
+    // T 是返回类型? Class<T>?
     private static <T> T getInstanec(Class<T> cls) throws IllegalAccessException, InstantiationException {
         return cls.newInstance();
     }
