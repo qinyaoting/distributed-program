@@ -23,5 +23,16 @@ public class GenericTest {
         Generic generic5 = new Generic(55.55);
         Generic generic6 = new Generic(false);
 
+
     }
+
+    public void set(Generator<String> params) {
+
+    }
+
+    public void setParam(Generator<?> param) {
+
+    }
+
+
 }
