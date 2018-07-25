@@ -1,4 +1,4 @@
-package test76.annotation;
+package test5.annotation;
 
 /**
  * Created with IntelliJ IDEA.

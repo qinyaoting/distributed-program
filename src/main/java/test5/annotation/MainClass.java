@@ -1,7 +1,10 @@
-package test76.annotation;
+package test5.annotation;
+
+import javafx.util.converter.DoubleStringConverter;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Type;
+import java.util.stream.DoubleStream;
 
 /**
  * Created with IntelliJ IDEA.

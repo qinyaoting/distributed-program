@@ -1,7 +1,5 @@
 package test25.nio;
 
-import org.apache.commons.io.FileUtils;
-
 import java.io.File;
 import java.io.IOException;
 
@@ -10,7 +8,7 @@ import java.io.IOException;
  */
 public class TestNio {
 
-    public static void main(String[] args) throws IOException {
+    /*public static void main(String[] args) throws IOException {
 
         NIOUtil util = new NIOUtil();
         String source = "/home/chin/company/conf/os/CentOS-7.0-1406-x86_64-DVD.iso";
@@ -29,5 +27,5 @@ public class TestNio {
 
 
 
-    }
+    }*/
 }
