@@ -5,11 +5,13 @@ package test14.guava.streams;
 
 import com.google.common.collect.Streams;
 import javafx.util.Pair;
+import org.springframework.data.util.StreamUtils;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 /**
  * Created with IntelliJ IDEA.
@@ -32,6 +34,9 @@ public class MainClass {
 
         System.out.println(pairs);
 
+        // 第二部分
+        Stream<String> streamA = Stream.of("A","B","C");
+        Stream<String> streamB = Stream.of("Apple", "Banana", "Carrot", "Doughnut");
         /*XXX
         List<Person> people = Streams.zip(subjectArr.stream(), numArr.stream(), Person::new)
                 .collect(Collectors.toList());

@@ -7,14 +7,22 @@ import com.google.common.base.Objects;
  */
 public class Person {
 
-    private int id;
-    private String name;
-    private double salary;
+    public int id;
+    public String name;
+    public double salary;
 
     public Person(int id, String name, double salary) {
         this.id = id;
         this.name = name;
         this.salary = salary;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null && obj instanceof Person) {
+            return this.id == ((Person)obj).id;
+        }
+        return false;
     }
 
     public Person() {

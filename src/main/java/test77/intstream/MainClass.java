@@ -34,7 +34,8 @@ public class MainClass {
         //IntStream.generate(()->ThreadLocalRandom.current().nextInt(10)).limit(3).forEach(System.out::println);
 
         // 1 2 3 4 的平方
-        //IntStream.range(1,5).map(i->i*i).forEach(System.out::println);
+        IntStream.range(1,5).map(i->i*i).forEach(System.out::println);
+
 
         //
         //Stream<Color> stream = IntStream.range(1,5).mapToObj(i->getColor(i));
