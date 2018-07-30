@@ -14,7 +14,7 @@ import java.util.Random;
  */
 public class BasicMessageFormatExample {
 
-    public static boolean isPrime(int n) {
+    public static boolean isPrime(int n) {      //素数
         if (n==2) return true;
         for (int i = 2; i <= (int)Math.sqrt(n)+1; i++) {
             if(n%i == 0) {
