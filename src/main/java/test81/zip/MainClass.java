@@ -23,7 +23,7 @@ public class MainClass {
 
         List<String> names = new ArrayList<>(Arrays.asList("John", "Jane", "Jack", "Dennis"));
         List<Integer> ages = new ArrayList<>(Arrays.asList(24, 25, 27));
-
+        //first
         Stream<String> ss = IntStream.range(0, Math.min(names.size(),ages.size()))
                 .mapToObj(i->names.get(i)+ ":" + ages.get(i));
         System.out.println(ss);
