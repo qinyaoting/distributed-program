@@ -40,6 +40,6 @@ public class MainClass2 {
                 .map(c->c.getResult())
                 .map(r->r.getUser())
                 .map(u->u.name)
-                .orElseThrow(()->new IllegalArgumentException("the value of param comp isn't avalid"));
+                .orElseThrow(()->new IllegalArgumentException("the value of param comp isn't valid"));
     }
 }

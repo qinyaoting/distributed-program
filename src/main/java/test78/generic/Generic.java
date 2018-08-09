@@ -1,4 +1,4 @@
-package test78.generic.t;
+package test78.generic;
 
 /**
  * Created with IntelliJ IDEA.

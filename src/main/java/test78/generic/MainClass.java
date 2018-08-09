@@ -11,7 +11,8 @@ package test78.generic;
 public class MainClass {
 
     public static void main(String[] args) throws InstantiationException, IllegalAccessException {
-        Box box = new Box();        //Box指定的支持泛型, 可以往里边放东西
+        // 泛型类
+        Box box = new Box();        //Box未指定的支持泛型, 可以往里边放东西
         box.setObj(new Apple());
         Apple ap = (Apple) box.getObj();// 需要强制转换
 
@@ -20,13 +21,13 @@ public class MainClass {
         Apple ap2 = box2.getObj();  //不需要转换了, 直接拿到了Apple
 
 
-        Apple ap3 = getInstanec(Apple.class);
+        Apple ap3 = getInstance(Apple.class);
 
     }
 
     // 泛型方法的使用
     // T 是返回类型? Class<T>?
-    private static <T> T getInstanec(Class<T> cls) throws IllegalAccessException, InstantiationException {
+    private static <T> T getInstance(Class<T> cls) throws IllegalAccessException, InstantiationException {
         return cls.newInstance();
     }
 }

@@ -24,6 +24,7 @@ public class MainClass {
         });
     }
 
+    // 返回参数要求是CharSequence的子类
     public static <T extends CharSequence> T defaultIfBlank(T str, T defaultStr) {
         return isBlank(str)?defaultStr:str;
     }
