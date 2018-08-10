@@ -8,7 +8,7 @@ package test78.generic.t;
  * To change this template use File | Settings | File Templates.
  * Description:
  */
-public class FruitGenerator<T> implements Generator<T> {   //实现了接口,
+public class FruitGenerator<T> implements Generator<T> {   //实现了接口, 可以不指定具体的类型, 继续用T
 
     @Override
     public T next() {

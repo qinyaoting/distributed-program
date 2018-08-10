@@ -1,5 +1,7 @@
 package test78.generic;
 
+import static org.apache.commons.lang3.StringUtils.isBlank;
+
 /**
  * Created with IntelliJ IDEA.
  * User: chin
@@ -8,7 +10,7 @@ package test78.generic;
  * To change this template use File | Settings | File Templates.
  * Description:
  */
-public class MainClass {
+public class BoxTest {
 
     public static void main(String[] args) throws InstantiationException, IllegalAccessException {
         // 泛型类
@@ -26,8 +28,13 @@ public class MainClass {
     }
 
     // 泛型方法的使用
-    // T 是返回类型? Class<T>?
+    // T 是返回类型? Class<T> ,貌似传入T, 返回T,没有什么用?
     private static <T> T getInstance(Class<T> cls) throws IllegalAccessException, InstantiationException {
         return cls.newInstance();
+    }
+
+    // 返回参数要求是CharSequence的子类
+    public static <T extends CharSequence> T defaultIfBlank(T str, T defaultStr) {
+        return isBlank(str)?defaultStr:str;
     }
 }

@@ -1,5 +1,7 @@
 package test81.zip;
 
+import com.google.common.collect.ImmutableMap;
+import com.google.common.collect.Lists;
 import com.google.common.collect.Streams;
 
 import java.util.ArrayList;
@@ -19,7 +21,8 @@ import java.util.stream.Stream;
 public class MainClass {
 
     public static void main(String[] args) {
-
+        List l = Lists.newArrayList();
+        ImmutableMap.of(1,"1", 2, "2");
         List<String> names = new ArrayList<>(Arrays.asList("John", "Jane", "Jack", "Dennis"));
         List<Integer> ages = new ArrayList<>(Arrays.asList(24, 25, 27));
         //first
