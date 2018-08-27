@@ -28,4 +28,12 @@ public class MainClass {
     public static <T extends CharSequence> T defaultIfBlank(T str, T defaultStr) {
         return isBlank(str)?defaultStr:str;
     }
+
+    // 两个泛型参数
+    public <S,D> D map(S sourceObject, Class<S> sourceClass, Class<D> destinationClass) {
+        return null;
+    }
+
+
+
 }
