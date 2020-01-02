@@ -20,7 +20,6 @@ public class MainTest1 {
 //        boolean isPresend = possible.isPresent();
 //        System.out.println(isPresend);
 
-
         boolean invalid = Strings.isNullOrEmpty("");
         boolean invalid2 = Strings.isNullOrEmpty(null);
         boolean invalid3 = Strings.isNullOrEmpty("abc");

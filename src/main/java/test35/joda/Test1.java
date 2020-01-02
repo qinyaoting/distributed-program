@@ -56,8 +56,21 @@ public class Test1 {
 
         System.out.println(Days.daysBetween(start,end).getDays());
         System.out.println(Hours.hoursBetween(start,end).getHours());
-        System.out.println(Minutes.minutesBetween(start,end).getMinutes());
+        System.out.println(Minutes.minutesBetween(start,end).getMinutes());     //可以是负数
         System.out.println(Seconds.secondsBetween(start,end).getSeconds());
+
+
+
+        // 时分(字符串)转date "08:30"->Date
+
+        // 20170912 12:20:01
+        // 20170912 12:20:59 same minutes
+
+
+        //TODO
+        //获取这个月
+        DateTime dt22 = new DateTime().dayOfMonth().withMinimumValue().withMillisOfDay(0);
+        System.out.println(dt22.toString("yyyy-MM-dd HH:mm:ss"));
 
 
     }

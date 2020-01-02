@@ -53,5 +53,6 @@ public class RemoveNullValue {
 
         map.values().removeAll(Collections.singleton(null));
         System.out.println(map);
+
     }
 }

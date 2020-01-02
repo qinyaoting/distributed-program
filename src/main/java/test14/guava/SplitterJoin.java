@@ -6,6 +6,9 @@ import com.google.common.base.Splitter;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.primitives.Ints;
+import org.apache.commons.lang3.StringUtils;
+
+import java.util.Map;
 
 /**
  * Created by chin on 11/28/16.
@@ -14,7 +17,7 @@ import com.google.common.primitives.Ints;
  *
  *
  */
-public class MainTest2 {
+public class SplitterJoin {
 
     public static void main(String[] args) {
         ///Map<String, Map<Long, List<String>>> map = new HashMap<String, Map<Long,List<String>>>();
@@ -52,6 +55,19 @@ public class MainTest2 {
 
 
 
+        // 分割字符串 100-200 0-200 -200 100- -
+
+        String[] str11 = StringUtils.split("100-2000", "-");
+        String[] str12 = StringUtils.split("0-2000", "-");
+        String[] str13 = StringUtils.split("100-", "-");
+        String[] str14 = StringUtils.split("-", "-");
+
+        System.out.println(str14.length);
+
+
+        // url参数自动变为map
+        String ss = "amount=233&sourceUserId=2&targetUserId=9999&timestamp=1577954264122";
+        final Map<String, String> params = Splitter.on("&").withKeyValueSeparator("=").split(ss);
 
     }
 }

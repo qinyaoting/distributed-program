@@ -7,7 +7,7 @@ public enum Color {
 
     //RED, GREEN, BLANK, YELLOW
 
-    RED("红色",1),GREE("绿色",2),BLANK("白色",3),YELLOW("黄色",4);
+    RED("红色",1),GREEN("绿色",2),BLANK("白色",3),YELLOW("黄色",4);
 
     private String name;
     private int index;
