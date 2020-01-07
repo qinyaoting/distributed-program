@@ -81,5 +81,10 @@ public class Main {
         Car[] cars = objectMapper.readValue(jsonCarArray, Car[].class);
         // List<Car> listCar = objectMapper.readValue(jsonCarArray, new TypeReference<List<Car>>(){});
 
+
+        //9 map转为object
+        //final ObjectMapper mapper = new ObjectMapper(); // jackson's objectmapper
+        //final MyPojo pojo = mapper.convertValue(map, MyPojo.class);
+
     }
 }

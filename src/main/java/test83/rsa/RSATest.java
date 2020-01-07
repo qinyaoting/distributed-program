@@ -15,8 +15,8 @@ import java.util.TreeMap;
 public class RSATest {
 
 
-    private static String pubKeyEncoded="MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCDA/QhX4cDr8tOE0KN/SYRoytX0kmVsxdogM6ZNtRcHTIiTn3y/P2YoN83HA669AHhb2ZAe7e2eWxKf2MdxT9Adw+JvDyM9iSQFd8m5WlUydfYQP+sCq6wP/uWT5zP/kfHrOnH9D6707tSAosxVTK1gnNK7OE29k7JCWsC7TZCLQIDAQAB";
-    private static String prikeyEncoded="MIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBAIMD9CFfhwOvy04TQo39JhGjK1fSSZWzF2iAzpk21FwdMiJOffL8/Zig3zccDrr0AeFvZkB7t7Z5bEp/Yx3FP0B3D4m8PIz2JJAV3yblaVTJ19hA/6wKrrA/+5ZPnM/+R8es6cf0PrvTu1ICizFVMrWCc0rs4Tb2TskJawLtNkItAgMBAAECgYAIr6Vq5QN1ih0ngv1hnov8lV3VR7rbMvF1WzzXSZxQsxrUzXFqP72sddX2uGR9npnVUWZtFga7EVfNpJ50pdQooGaF2FwI6Lw0BtiuT7ocnHJYCpuF79YdyEB8QUdHoQh+E2LW389ugmO4NEcbkh4KTtr+2heW3S6a1TwRR3F5HQJBANZNNF0yoKp+CcUE6oyPeb18kPwVimR+2fFhNIF2NjxI+D8yYg2rvb5u1wdKv/rSsO/iNhp4eb+OMB3HV0jiC6sCQQCcghka0YW7eIYEsDe6N893pkCsV4K5r4kaNXvrhP5BBBtDehuRAb112jPtF8xPQy6HS6JHklaIYq5CIyOv81GHAkB7XwzzTm8iV9cF/nONIhgi1zCcf0Yh3slXZe+VTFmi0RthPn8mgaWFmUffYdAt9Nd58k/VY2ArwA7BRf5g7glrAkEAhA3dotxAy3KhGdmZ27z1h842aXQZMBWlSADyw0FeynrtihzAn7RpKMRo5dcbo5Fa8/tkPKGD8+XXhKRjmzVhhwJAeD4JAJRYts6Jok3a46OwOIS1VrXMoeRZmeVYgQ9ev9q61/5YRSpqvUl6k3vcjZm6OUf7zGbAvcbjTn6sGFHxbg==";
+    private static String pubKeyEncoded="MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCRv3SyxOLh7KynCayoVJTnCBtkqPq/gvBYTxgoX8LdaO0knkOvoDhVlRjERAjRF9VW/OQ97Dy1tbiaSsJoiE25QWoysMQlT4W7Ao1K/mEh4caFZOVAc20BbeqPwlpFkG6xJ4sUh+UtzsIXLXPg5x1rjBPK/O6VzCfwnBYHntCrsQIDAQAB";
+    private static String prikeyEncoded="MIICdQIBADANBgkqhkiG9w0BAQEFAASCAl8wggJbAgEAAoGBAJG/dLLE4uHsrKcJrKhUlOcIG2So+r+C8FhPGChfwt1o7SSeQ6+gOFWVGMRECNEX1Vb85D3sPLW1uJpKwmiITblBajKwxCVPhbsCjUr+YSHhxoVk5UBzbQFt6o/CWkWQbrEnixSH5S3Owhctc+DnHWuME8r87pXMJ/CcFgee0KuxAgMBAAECgYB6Nlp6lNHStAzKPDiFJfd+CrQ9odwwvnEe+6O8JyBVXGiNrg//so/KY61S1eG2ww9nU8NnkTIPBIP5DPsbgD/67sL+LFdrxCwO/N47F6tFe/UDatUqpOgz51jUa51WxPQdZhyN9dp/+VBUIBsgjXwCA7TmpM2rcNZcN9iejwwYaQJBAO3FHndu+Lobw4tHOi6O8q0wZuQKnZCN7qkiUqwr7BIhoQg/hFVWNl9ToMzp3H6s2cAc2Yn3TCLfHFWOS5b4SQ8CQQCc7Cc0nslOCcFP1saTSZy12LW3kcMVw/xAeqFMBkHa5byypFMrhaaE3kSC2O2bUQ2GugJVKOiHyCrdm+AuhD8/AkBXlY3kdsc+Xu3IB0PCVLvF2hd8lwB1eCLawJ7tdvxtrV+RFzya5rf+o2KPOPIU430OjFIBxUuRaNgaF+F2Sh03AkAjLIP1NYpl5aXhIYFNTnjEAhlpVlDmNhH62gIBqn1kdY6AdHj4DnMu4St2MO3BnL9tbZBMSmkk1mdVWTU8+AO9AkBsoqhO6YHyudRynfW6M/yLpQa5th6JhQ4RkEH8ESJ7AJM7znBxcxgPSxpr0HvlPlgEeHJ5ZpwKVXpDZvLYcNaO";
 
     private static final String RSA_ALGORITHM = "RSA";
 
@@ -24,8 +24,10 @@ public class RSATest {
         try {
             //测试用公钥加密
             TreeMap<String,Object> params = new TreeMap<String,Object>();//TreeMap 自带排序
+            params.put("appId","sc-payment");//会员id
+            params.put("nonce","bpFsYeBUrgKIyUga");//会员id
             params.put("sourceUserId",2);//会员id
-            params.put("targetUserId",9999);//充值余额
+            //params.put("targetUserId",9999);//充值余额
             params.put("amount", 233);//充值余额
             params.put("timestamp", DateTime.now().getMillis());//充值余额
             String signStr = sign(params);//生成签名

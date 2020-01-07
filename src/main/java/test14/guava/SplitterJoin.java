@@ -5,9 +5,11 @@ import com.google.common.base.Joiner;
 import com.google.common.base.Splitter;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
+import com.google.common.collect.Lists;
 import com.google.common.primitives.Ints;
 import org.apache.commons.lang3.StringUtils;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -68,6 +70,19 @@ public class SplitterJoin {
         // url参数自动变为map
         String ss = "amount=233&sourceUserId=2&targetUserId=9999&timestamp=1577954264122";
         final Map<String, String> params = Splitter.on("&").withKeyValueSeparator("=").split(ss);
+
+
+        // 希望拆成三段，不论原来有几个空格
+        //String fullTitle = "新龙城 2室2厅 104.6平米";
+        //String fullTitle = "新龙城 2室2厅 ";
+        //String fullTitle = "新龙城 2室2厅";
+        //String fullTitle = "新龙城";
+        String fullTitle = " ";
+
+        fullTitle += " b b";
+        List<String> list = Lists.newArrayList(Splitter.on(" ").split(fullTitle).iterator());
+        list.forEach(System.out::println);
+
 
     }
 }

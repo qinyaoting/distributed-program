@@ -20,6 +20,8 @@ public class MainClass3 {
 
     public static void main(String[] args) {
 
+
+
         // 可以用of 和ofNullable来创建对象
         //Optional<User> user = Optional.of(new User());
         // 传空会抛异常NullPointerException
