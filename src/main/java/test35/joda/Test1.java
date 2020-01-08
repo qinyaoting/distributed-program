@@ -2,6 +2,8 @@ package test35.joda;
 
 import org.joda.time.*;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.time.*;
 import java.time.Duration;
 import java.time.Period;
@@ -71,6 +73,10 @@ public class Test1 {
         //获取这个月
         DateTime dt22 = new DateTime().dayOfMonth().withMinimumValue().withMillisOfDay(0);
         System.out.println(dt22.toString("yyyy-MM-dd HH:mm:ss"));
+
+        long s1 = System.currentTimeMillis();
+        long s2 = DateTimeUtils.currentTimeMillis();
+        System.out.printf(String.format("%s - %s s1 same to s2", s1,s2));
 
 
     }

@@ -50,5 +50,7 @@ public class StringToDouble {
         System.out.println("Doubles:" + c11);
 
         double c12 = Doubles.stringConverter().convert(val);
+        System.out.println("Doubles:" + c12);
+
     }
 }

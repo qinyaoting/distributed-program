@@ -3,6 +3,7 @@ package test82.inttool;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Streams;
+import org.apache.commons.lang3.math.NumberUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -22,13 +23,16 @@ public class MainClass {
 
     public static void main(String[] args) {
 
+
         // 把字符串变为整数，可以传递默认值，不抛出异常
-
-
-
-
-
         //first
+        int withDefault = NumberUtils.toInt("10x",0);
+        System.out.println(withDefault);
+
+
+        boolean bb = NumberUtils.isDigits("10x");
+        boolean bbb = NumberUtils.isDigits("100");
+        System.out.println(bbb);
 
         //second
 
